@@ -1,0 +1,531 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* ---------------- page and bg-------------------- */
+
+#page {
+	height: 100%;
+	width: 90%;
+	margin: 0 50px;
+	padding: 30px 120px;
+	background-color: #fff;
+	box-shadow: 0 1px 12px rgba(0,0,0,.4);
+}
+
+#bg {
+	background-image: url('img/black_angle_bg.png');
+	background-repeat: none;
+	background-size: cover;
+	background-color: #f2f2f2;
+}
+
+
+/* ---------------- Nav -------------------- */
+
+header {
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display: block;
+}
+
+#main-nav {
+	height: 70px;
+	text-align: center;
+	background-color: #fff34C;
+	border-bottom: solid 10px #fff;
+	position: fixed;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	display: inline-block;
+}
+
+nav {
+	font-family: 'Sanchez', serif;
+}
+
+nav ul {
+	list-style: none;
+	margin: auto;
+	padding: 0;
+	display: inline-block;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display: inline-block;
+	color: #000;
+	padding: 15px;
+	margin: 5px;
+	text-decoration: none;
+	text-align: center;
+   
+}
+
+.nav-btn {
+	transition: all 0.3s ease 0s;
+}
+
+.nav-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+nav a:onclick {
+	color: #fff34C;
+}
+
+#logo {
+	display: inline-block;
+	height: 110px;
+	margin: 0 30px;
+}
+
+
+
+
+/* ---------------- Main -------------------- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+main #smart {
+	height: 500px;
+	width: 500px;
+}
+
+h1 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.75rem;
+}
+
+p {
+	content: wrap;
+}
+
+a {  
+	display: inline-block;
+	margin: 20px;
+	position: relative;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #87AF4A;
+	color: #fff;
+	width: 100%;
+	padding: 8px 50px;
+	display: block;
+	margin-top: 20px;
+}
+
+textarea,
+input {
+	outline: none;
+}
+
+/* ---------------- Column Section -------------------- */
+
+.container {
+	border-left: solid #000 40px;
+}
+
+#column-one {
+	padding: 10%;
+	word-wrap: wrap;
+	width: 50%;	
+}
+
+#column-two {
+	width: 50%;
+}
+
+.container,
+.container2 {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#honeybee {
+	height: 20em;
+	padding: 0 20%;
+}
+
+#turnHead h2 {
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+	word-wrap: none;
+	margin: 0 auto;
+}
+
+#turnHead h2 {
+	margin: 0 auto;
+	padding-bottom: 100%;
+	padding-top: 20%;
+}
+
+#column-three p {
+	word-wrap: wrap;
+	padding: 10%;
+}
+
+#sunflower {
+	height: 18em;
+	padding: 0 20%;
+}
+
+
+
+
+/* ---------------- Flexbox-------------------- */
+
+.container,
+.container2, 
+.donate {
+	display: flex;
+	margin: 0 auto;
+	align-content: space-between;
+}
+
+.container,
+.container2 {
+	height: 25em;
+	align-items: center;
+}
+
+.donate {
+	flex-flow: row wrap;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-around;
+	align-self: center;
+}
+
+.btndon {
+	align-self: flex-end;
+}
+
+
+
+/* ---------------- Form -------------------- */
+
+.donate {
+	padding: 5% 15%;
+	border-radius: 4px;
+	background-color: #87AF4A;
+	color: #fff;
+	border-bottom: solid 9px #000;
+}
+
+.donate h2 {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 6em;
+}
+
+.btnfos {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.btnfos-1 {
+  background: #fff;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: #87af4a;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+		  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+/* ---------------- Retrieve and Recover Page -------------------- */
+  
+
+
+
+/* ---------------- Retrieve and Recover Form -------------------- */  
+
+/*flex swarm and warnings*/
+.wcontainer,
+.swarmsvg,
+.warning {
+	padding: 0;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 3em;
+	align-items: space-between;
+	flex-direction: row;
+}
+
+.swarmsvg {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.warning {
+	word-wrap: wrap;
+	flex-grow: 3;
+	flex-shrink: 3;
+	align-self: center;
+}
+
+.warning img {
+	align-self: center;
+}
+
+/*end flex*/
+
+.warnli {
+	list-style-type: none;
+}
+
+.warning ul li {
+	margin: .75em auto;
+}
+
+span {
+	font-weight: 300;
+	color: #E53C2E;
+}
+
+
+
+
+/* ---------------- Flexbox R&R Form-------------------- */
+
+.rrcontainer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3em;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.rrcontainer * {
+  box-sizing: border-box;
+}
+
+.rrcontainer h1 {
+	text-align: center;
+	color: #000;
+}
+
+.flex {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.flex li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > li {
+  margin-bottom: 20px;
+}
+
+.flex > li > label {
+  flex: 1 0 100px;
+  max-width: /*200px*/30em;
+}
+
+.flex > li > label + * {
+  flex: 1 0 200px;
+}
+
+
+.flex li input,
+.flex li textarea {
+  padding: 15px;
+  font: normal 16px/1.5 sans-serif;
+  border-style: none;
+  border-left: 9px solid #87AF4A;
+  transition: all 0.3s ease 0s;
+}
+
+.flex li input:hover,
+.flex li textarea:hover {
+	border-left: 9px solid #000;
+}
+
+.flex li input:focus,
+.flex li textarea:focus {
+	border-left: 9px solid #000;
+}
+
+
+.flex h3 {
+	align-items: center;
+}
+
+.flex li button {
+  margin: auto;
+  padding: 15px 50%;
+  font: normal 18px/1.5 sans-serif;
+  border: none;
+  background: #000;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+.flex li button:hover,
+.flex li button:focus {
+	background: #87AF4A;
+}
+
+/* hide checkbox */
+input[type='checkbox'] {
+    display: none;
+}
+
+/* if checkbox is checked, then do these things */
+input[type="checkbox"]:checked + label {
+  color: #87AF4A;
+}
+
+ /*styles when hovering over options */
+label:hover {
+  color: #87AF4A;
+  cursor: pointer;
+  
+/*transitions and animations */
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+  
+
+
+/* ---------------- Bee Smart -------------------- */
+
+.card {
+	margin: 0 auto;
+	padding: 100px 300px;
+}
+
+.btn {
+	margin: 0 auto;
+	color: #000;
+	background-color: #f2f2f2;
+	padding: 10px 20px;
+	border-left: solid 9px #000;
+	font-weight: bold;
+	transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+	background-color: #87AF4A;
+	color: #fff;
+}
+
+.factAdd {
+	font-size: 3em;
+	margin: 0 auto;
+	word-wrap: none;
+}
+
+
+
+
+/* ---------------- media queries -------------------- */
+
+@media only screen and (max-width : 1024px) {
+
+	.container {
+		height: 15em;
+	}
+
+	#honeybee {
+		display: none;
+	}
+
+	#column-one {
+		padding: 0px;
+		width: 100%;
+	}
+
+	.swarmsvg {
+		display: none;
+	}
+
+	.warning {
+		margin: 0 auto;
+	}
+}
+
+
+@media only screen and (max-width : 950px) {
+
+	#sunflower {
+		display: none;
+	}
+
+	.donate h2 {
+		font-size: 4.6em;
+	}
+
+	#logo {
+		height: 6em;
+	}
+
+
+}
+
+
